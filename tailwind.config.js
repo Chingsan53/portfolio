@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'slightly-slate': '#E1D7C6'
+      }
+    },
   },
   plugins: [require('flowbite/plugin')],
   darkMode: 'class'
