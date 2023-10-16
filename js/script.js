@@ -46,3 +46,13 @@ themeToggleBtn.addEventListener('click', function () {
     }
 
 });
+
+/* Contact Me Version 2 Javascript */
+document.querySelector('.contact-card').addEventListener('click', function () {
+    this.classList.toggle('flipped');
+});
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thanks for reaching out!'); // You can replace this with a more advanced submission logic.
+});

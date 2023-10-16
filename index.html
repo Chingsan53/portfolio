@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/style2.css" <link rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
 </head>
 
 <body class="bg-[#F8F4EA] dark:bg-slate-800">
@@ -273,7 +280,7 @@
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Collection of sunset photos
                                 which built entirely using static HTML/CSS with API to fetch data from Pexels.</p>
                             <a href="https://website2-two.vercel.app/"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-lg hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                class="read-more inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-lg hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Read more
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +306,7 @@
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A web Tic Tac Toe game built
                                 using HTML, Tailwind CSS, and Vanilla Javascript</p>
                             <a href="https://shatfield4.github.io/cpsc349-project3/"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-r from-teal-200 to-lime-200 rounded-lg hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                class="read-more inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-r from-teal-200 to-lime-200 rounded-lg hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Read more
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -325,7 +332,7 @@
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
                                 technology acquisitions of 2021 so far, in reverse chronological order.</p>
                             <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                class="read-more inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Read more
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -344,46 +351,41 @@
 
     </main>
 
+    <div class="pdf-download">
+        <a href="ching-resume.pdf" target="_blank">
+            <i class="fa fa-file-pdf-o"></i> Download my Resume here.
+        </a>
+    </div>
+
     <!-- ============= FOOTER ==============-->
     <div class="py-20" id="projects">
         <div class="container mx-auto items-center">
             <!-- ======== Contact Me ======== -->
-            <section class="bg-[#F8F4EA] dark:bg-gray-900">
-                <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-                        Contact Me</h2>
-                    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Want to
-                        learn more about me? You can get in touch with me right now</p>
-                    <form action="#" class="space-y-8">
-                        <div>
-                            <label for="email"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
-                                email</label>
-                            <input type="email" id="email"
-                                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                                placeholder="name@domain.com" required>
-                        </div>
-                        <div>
-                            <label for="subject"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                            <input type="text" id="subject"
-                                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                                placeholder="" required>
-                        </div>
-                        <div class="sm:col-span-2">
-                            <label for="message"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
-                                message</label>
-                            <textarea id="message" rows="6"
-                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                placeholder="Leave a comment..."></textarea>
-                        </div>
-                        <button type="submit"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send
-                            message</button>
-                    </form>
+            <!-- Contact Me Version 3 -->
+            <div class="wrapper">
+                <div class="card front-face">
+                    <img src="img/Contact-me.png">
                 </div>
-            </section>
+                <div class="card back-face">
+                    <img src="img/chingsan.jpeg">
+                    <div class="info">
+                        <div class="title">
+                            Chingsan Ly
+                        </div>
+                        <p>
+                            Front-End Developer <br>
+                        </p>
+                    </div>
+                    <ul>
+                        <a href="https://www.facebook.com/chingsan.ly/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/chingsan-ly-010a43264/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Chingsan53"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 
