@@ -1262,6 +1262,11 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
