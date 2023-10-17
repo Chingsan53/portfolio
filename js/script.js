@@ -56,3 +56,5 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
     alert('Thanks for reaching out!'); // You can replace this with a more advanced submission logic.
 });
+
+// Scripts for Image Slider

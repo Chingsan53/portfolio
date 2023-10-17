@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
 
@@ -255,106 +256,46 @@
         </div>
 
         <!-- =========== CONTENT FOR SECTION 4 PROJECTS ===========-->
-        <div class="py-20" id="projects">
-            <div class="container mx-auto items-center">
-                <!-- ======== TITLE ======== -->
-                <div class="flex flex-col gap-3 items-center">
-                    <h1 class="text-indigo-600 dark:text-white font-bold text-3xl">PROJECTS</h1>
-                    <p class="">
+        <h1 class="text-indigo-600 dark:text-white font-bold text-3xl text-center">PROJECTS</h1>
 
-                    </p>
+        <div class="card-list">
+            <a href="https://shatfield4.github.io/cpsc349-project3/" class="card-item">
+                <img src="img/board_game.jpg" alt="Card Image">
+                <span class="developer">Web Game</span>
+                <h3>5X5 Tic Tac Toe Game</h3>
+                <p>A web Tic Tac Toe game built
+                    using HTML, Tailwind CSS, and Vanilla Javascript</p>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
                 </div>
-
-                <div class="p-5 sm:p-0 flex flex-wrap justify-between">
-
-                    <!-- =========== First Project ==========-->
-                    <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/img/sunset1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hello
-                                    Sunset Collection</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Collection of sunset photos
-                                which built entirely using static HTML/CSS with API to fetch data from Pexels.</p>
-                            <a href="https://website2-two.vercel.app/"
-                                class="read-more inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-lg hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- ============= Second Project =============-->
-                    <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/img/board_game.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">5X5 Tic
-                                    Tac Toe Game</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A web Tic Tac Toe game built
-                                using HTML, Tailwind CSS, and Vanilla Javascript</p>
-                            <a href="https://shatfield4.github.io/cpsc349-project3/"
-                                class="read-more inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-r from-teal-200 to-lime-200 rounded-lg hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- ============= Third Project =============-->
-                    <div
-                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    Noteworthy technology acquisitions 2021</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                                technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                            <a href="#"
-                                class="read-more inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
-                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
+            </a>
+            <a href="https://website2-two.vercel.app/" class="card-item">
+                <img src="img/sunset1.jpg" alt="Card Image">
+                <span class="designer">Photo Album</span>
+                <h3>Hello
+                    Sunset Collection</h3>
+                <p>Collection of sunset photos
+                    which built entirely using static HTML/CSS with API to fetch data from Pexels.</p>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
                 </div>
-            </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="img/chingsan.jpeg" alt="Card Image">
+                <span class="editor">project's genre</span>
+                <h3>The classic latin passage</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
         </div>
-
-
     </main>
 
     <div class="pdf-download">
         <a href="ching-resume.pdf" target="_blank">
-            <i class="fa fa-file-pdf-o"></i> Download my Resume here.
+            <i class="fa fa-file-pdf-o"></i> Download my Resume here
         </a>
     </div>
 
@@ -382,7 +323,7 @@
                         <a href="https://www.linkedin.com/in/chingsan-ly-010a43264/"><i
                                 class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Chingsan53"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/ChingsanLy"><i class="fa-brands fa-twitter"></i></a>
                     </ul>
                 </div>
             </div>
@@ -396,7 +337,7 @@
 
     <!-- ============= MAIN JS =============-->
 
-    <script src=" js/script.js">
+    <script src=" js/script.js defer">
     </script>
 
     <!-- ============= FLOWBITE JS =========-->
