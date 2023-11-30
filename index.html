@@ -1,181 +1,283 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/style2.css" />
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-</head>
+  <body class="bg-[#F8F4EA] dark:bg-slate-800">
+    <!-- ============= HEADER ==============-->
+    <header>
+      <nav
+        class="bg-[#7B8FA1] px-2 sm:px-4 py-2.5 dark:bg-slate-800 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="img/engineer.svg"
+              class="h-6 mr-3 sm:h-9"
+              alt="ching logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >Chingsan</span
+            >
+          </a>
 
-<body class="bg-[#F8F4EA] dark:bg-slate-800">
-  <!-- ============= HEADER ==============-->
-  <header>
-    <nav
-      class="bg-[#7B8FA1] px-2 sm:px-4 py-2.5 dark:bg-slate-800 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="#" class="flex items-center">
-          <img src="img/engineer.svg" class="h-6 mr-3 sm:h-9" alt="ching logo" />
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Chingsan</span>
-        </a>
+          <!--========== DARK MODE ==========-->
+          <div class="flex md:order-2">
+            <button
+              id="theme-toggle"
+              type="button"
+              class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+            >
+              <svg
+                id="theme-toggle-dark-icon"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+              </svg>
+              <svg
+                id="theme-toggle-light-icon"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
 
-        <!--========== DARK MODE ==========-->
-        <div class="flex md:order-2">
-          <button id="theme-toggle" type="button"
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-            <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-            </svg>
-            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                fill-rule="evenodd" clip-rule="evenodd"></path>
-            </svg>
-          </button>
-        </div>
+          <!--========= NAV BAR ==========-->
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section3"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact-me"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact me</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <!--========= NAV BAR ==========-->
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <!-- =========== HIDDEN NAV BAR =============-->
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+          </div>
           <ul
-            class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            id="menu"
+            class="hidden bg-green-200 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-1"
+          >
             <li>
-              <a href="#"
+              <a
+                href="#"
                 class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                aria-current="page">Home</a>
+                aria-current="page"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="#about"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              <a
+                href="#about"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
             </li>
             <li>
-              <a href="#skills"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+              <a
+                href="#skills"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Skills</a
+              >
             </li>
             <li>
-              <a href="#section3"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+              <a
+                href="#section3"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Services</a
+              >
             </li>
             <li>
-              <a href="#projects"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+              <a
+                href="#projects"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Projects</a
+              >
             </li>
             <li>
-              <a href="#contact-me"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact
-                me</a>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact me</a
+              >
             </li>
           </ul>
         </div>
+      </nav>
+    </header>
+    <!-- ============= MAIN ================-->
+    <main>
+      <!--======= CONTENT FOR SECTION 1 ========-->
+      <div class="px-10" id="intro">
+        <div
+          class="container mx-auto pt-10 px-5 flex flex-row md:flex-row sm:flex-col items-center gap-15"
+        >
+          <!-- left -->
+          <div class="my-auto px-20 py-5 flex flex-col gap-3">
+            <h1 class="text-gray-900 dark:text-white text-3xl font-bold">
+              Hello, my name is Chingsan
+            </h1>
+            <h2 class="text-gray-700 text-xl font-bold dark:text-gray-400">
+              Front-End Web Developer
+            </h2>
+            <p class="text-gray-600 dark:text-slate-400">
+              An entry level Web Developer with strong commitment
+            </p>
+            <a
+              href="https://www.linkedin.com/in/chingsan-ly-010a43264/"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-lg hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Find Out More
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
 
-        <!-- =========== HIDDEN NAV BAR =============-->
-        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-          <div class="w-6 h-0.5 bg-white"></div>
-          <div class="w-6 h-0.5 bg-white"></div>
-          <div class="w-6 h-0.5 bg-white"></div>
-        </div>
-        <ul id="menu" class="hidden bg-green-200 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-1">
-          <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-              aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#about"
-              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-          </li>
-          <li>
-            <a href="#skills"
-              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
-          </li>
-          <li>
-            <a href="#section3"
-              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-          </li>
-          <li>
-            <a href="#projects"
-              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact
-              me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- ============= MAIN ================-->
-  <main>
-    <!--======= CONTENT FOR SECTION 1 ========-->
-    <div class="px-10" id="intro">
-      <div class="container mx-auto pt-10 px-5 flex flex-row md:flex-row sm:flex-col items-center gap-15">
-        <!-- left -->
-        <div class="my-auto px-20 py-5 flex flex-col gap-3">
-          <h1 class="text-gray-900 dark:text-white text-3xl font-bold">
-            Hello, my name is Chingsan
-          </h1>
-          <h2 class="text-gray-700 text-xl font-bold dark:text-gray-400">
-            Front-End Web Developer
-          </h2>
-          <p class="text-gray-600 dark:text-slate-400">
-            An entry level Web Developer with strong commitment
-          </p>
-          <a href="https://www.linkedin.com/in/chingsan-ly-010a43264/"
-            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-lg hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Find Out More
-            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </div>
-
-        <!-- Right -->
-        <div class="">
-          <div class="scale-75 pt-20 left-0 overflow-hidden sm:scale-50 md:scale-50">
-            <img class="shadow rounded-full max-w-full h-auto align-middle border-none" src="./img/chingsan.jpeg"
-              alt="" />
+          <!-- Right -->
+          <div class="">
+            <div
+              class="scale-75 pt-20 left-0 overflow-hidden sm:scale-50 md:scale-50"
+            >
+              <img
+                class="shadow rounded-full max-w-full h-auto align-middle border-none"
+                src="./img/chingsan.jpeg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!--======= CONTENT FOR SECTION 2 ========-->
-    <div class="px-10" id="about">
-      <div class="container mx-auto pt-10 px-5 flex flex-row md:flex-row sm:flex-col items-center gap-15">
-        <!-- left -->
-        <div class="relative">
-          <div class="scale-100 left-0 h-full rounded-lg overflow-hidden sm:scale-50 md:scale-100">
-            <img class="" src="./img/computer_small.jpeg" alt="" />
+      <!--======= CONTENT FOR SECTION 2 ========-->
+      <div class="px-10" id="about">
+        <div
+          class="container mx-auto pt-10 px-5 flex flex-row md:flex-row sm:flex-col items-center gap-15"
+        >
+          <!-- left -->
+          <div class="relative">
+            <div
+              class="scale-100 left-0 h-full rounded-lg overflow-hidden sm:scale-50 md:scale-100"
+            >
+              <img class="" src="./img/computer_small.jpeg" alt="" />
+            </div>
           </div>
-        </div>
 
-        <!-- right -->
-        <div class="my-auto px-20 py-5 flex flex-col gap-3">
-          <h1 class="text-indigo-600 dark:text-white font-bold text-3xl">
-            ABOUT ME
-          </h1>
-          <p class="text-gray-600 dark:text-slate-400">
-            A dedicated Computer Science senior at California State
-            University, Fullerton, I possess a robust skill set in web
-            development, encompassing HTML, CSS, JavaScript, React, and PHP.
-            With hands-on experience in designing and deploying various web
-            applications and websites, I am constantly driven by my passion
-            for technology and a commitment to continuous learning. My blend
-            of technical skill and enthusiasm ensures high-quality results in
-            every endeavor.
-          </p>
-          <!-- <h2 class="text-gray-400 dark:text-slate-400 font-medium">JavaScript</h2>
+          <!-- right -->
+          <div class="my-auto px-20 py-5 flex flex-col gap-3">
+            <h1 class="text-indigo-600 dark:text-white font-bold text-3xl">
+              ABOUT ME
+            </h1>
+            <p class="text-gray-600 dark:text-slate-400">
+              A dedicated Computer Science senior at California State
+              University, Fullerton, I possess a robust skill set in web
+              development, encompassing HTML, CSS, JavaScript, React, and PHP.
+              With hands-on experience in designing and deploying various web
+              applications and websites, I am constantly driven by my passion
+              for technology and a commitment to continuous learning. My blend
+              of technical skill and enthusiasm ensures high-quality results in
+              every endeavor.
+            </p>
+            <!-- <h2 class="text-gray-400 dark:text-slate-400 font-medium">JavaScript</h2>
                     <div class="w-full bg-gray-200 h-1.5 rounded-md">
                         <div class="w-4/5 bg-indigo-600 h-1.5 rounded-md"></div>
                     </div>
@@ -189,175 +291,184 @@
                     <div class="w-full bg-gray-200 h-1.5 rounded-md">
                         <div class="w-1/2 bg-indigo-600 h-1.5 rounded-md"></div>
                     </div> -->
+          </div>
         </div>
       </div>
+
+      <!--======= CONTENT FOR SECTION 3 ========-->
+      <div class="py-20" id="skills">
+        <div class="container mx-auto items-center">
+          <!-- Top -->
+          <div class="flex flex-col gap-3 items-center">
+            <h1 class="text-indigo-600 dark:text-white font-bold text-3xl">
+              SKILLS
+            </h1>
+            <p class=""></p>
+          </div>
+          <!-- Skill Bars-->
+          <div class="skill-bars center">
+            <div class="bar">
+              <div class="info">
+                <span>JavaScript</span>
+              </div>
+              <div class="progress-line html">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>C++</span>
+              </div>
+              <div class="progress-line css">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>React</span>
+              </div>
+              <div class="progress-line jquery">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>NodeJs</span>
+              </div>
+              <div class="progress-line python">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>PHP, MySQL, & Python</span>
+              </div>
+              <div class="progress-line mysql">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========== CONTENT FOR SECTION 4 PROJECTS ===========-->
+      <div class="py-20" id="projects">
+        <div class="container mx-auto items-center">
+          <!-- Top -->
+          <div class="flex flex-col items-center">
+            <h1 class="text-indigo-600 dark:text-white font-bold text-3xl">
+              Projects
+            </h1>
+          </div>
+          <div class="card-list">
+            <a
+              href="https://shatfield4.github.io/cpsc349-project3/"
+              class="card-item"
+            >
+              <img src="img/board_game.jpg" alt="Card Image" />
+              <span class="developer">Web Game</span>
+              <h3>5X5 Tic Tac Toe Game</h3>
+              <p>
+                A web Tic Tac Toe game built using HTML, Tailwind CSS, and
+                Vanilla Javascript
+              </p>
+              <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+              </div>
+            </a>
+            <a href="https://website2-two.vercel.app/" class="card-item">
+              <img src="img/sunset1.jpg" alt="Card Image" />
+              <span class="designer">Photo Album</span>
+              <h3>Hello Sunset Collection</h3>
+              <p>
+                Collection of sunset photos which built entirely using static
+                HTML/CSS with API to fetch data from Pexels.
+              </p>
+              <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+              </div>
+            </a>
+            <a href="#" class="card-item">
+              <img src="img/csuf-pic.jpeg" alt="Card Image" />
+              <span class="editor">E-Commerce</span>
+              <h3>Angkor Clothing Shop</h3>
+              <p>
+                Enhanced customer experience through a seamless online shopping
+                experience. Built using React with integrated Firebase for
+                authentication, Firestore for database management, and Stripe
+                for secure payment.
+              </p>
+              <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+              </div>
+            </a>
+            <a href="#" class="card-item">
+              <img src="img/khmerkademy.PNG" alt="Card Image" />
+              <span class="editor">E-Learning</span>
+              <h3>Language Learning App (KhmerKademy)</h3>
+              <p>
+                A user-friendly website that caters to diverse learning
+                experiences. A website that everyone needs to learn their second
+                language.
+              </p>
+              <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="pdf-download">
+      <a href="resume-v5.pdf" target="_blank">
+        <i class="fa fa-file-pdf-o"></i> Download my Resume here
+      </a>
     </div>
 
-    <!--======= CONTENT FOR SECTION 3 ========-->
-    <div class="py-20" id="skills">
+    <!-- ============= FOOTER ==============-->
+    <div class="py-20" id="contact-me">
       <div class="container mx-auto items-center">
-        <!-- Top -->
-        <div class="flex flex-col gap-3 items-center">
-          <h1 class="text-indigo-600 dark:text-white font-bold text-3xl">
-            SKILLS
-          </h1>
-          <p class=""></p>
-        </div>
-        <!-- Skill Bars-->
-        <div class="skill-bars center">
-          <div class="bar">
-            <div class="info">
-              <span>JavaScript</span>
-            </div>
-            <div class="progress-line html">
-              <span></span>
-            </div>
+        <!-- ======== Contact Me ======== -->
+        <!-- Contact Me Version 3 -->
+        <div class="wrapper">
+          <div class="card front-face">
+            <img src="img/Contact-me.png" />
           </div>
-          <div class="bar">
+          <div class="card back-face">
+            <img src="img/chingsan.jpeg" />
             <div class="info">
-              <span>C++</span>
+              <div class="title">Chingsan Ly</div>
+              <p>Front-End Developer <br /></p>
             </div>
-            <div class="progress-line css">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>React</span>
-            </div>
-            <div class="progress-line jquery">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>NodeJs</span>
-            </div>
-            <div class="progress-line python">
-              <span></span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <span>PHP, MySQL, & Python</span>
-            </div>
-            <div class="progress-line mysql">
-              <span></span>
-            </div>
+            <ul>
+              <a href="https://www.facebook.com/chingsan.ly/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/chingsan-ly-010a43264/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Chingsan53"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/ChingsanLy"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- =========== CONTENT FOR SECTION 4 PROJECTS ===========-->
-    <div class="py-20" id="projects">
-      <div class="container mx-auto items-center">
-        <!-- Top -->
-        <div class="flex flex-col items-center">
-          <h1 class="text-indigo-600 dark:text-white font-bold text-3xl">
-            Projects
-          </h1>
-        </div>
-        <div class="card-list">
-          <a href="https://shatfield4.github.io/cpsc349-project3/" class="card-item">
-            <img src="img/board_game.jpg" alt="Card Image" />
-            <span class="developer">Web Game</span>
-            <h3>5X5 Tic Tac Toe Game</h3>
-            <p>
-              A web Tic Tac Toe game built using HTML, Tailwind CSS, and
-              Vanilla Javascript
-            </p>
-            <div class="arrow">
-              <i class="fas fa-arrow-right card-icon"></i>
-            </div>
-          </a>
-          <a href="https://website2-two.vercel.app/" class="card-item">
-            <img src="img/sunset1.jpg" alt="Card Image" />
-            <span class="designer">Photo Album</span>
-            <h3>Hello Sunset Collection</h3>
-            <p>
-              Collection of sunset photos which built entirely using static
-              HTML/CSS with API to fetch data from Pexels.
-            </p>
-            <div class="arrow">
-              <i class="fas fa-arrow-right card-icon"></i>
-            </div>
-          </a>
-          <a href="#" class="card-item">
-            <img src="img/csuf-pic.jpeg" alt="Card Image" />
-            <span class="editor">Database</span>
-            <h3>CSUF Grade Checking Website</h3>
-            <p>
-              Designed with students in mind, our platform offers a
-              user-friendly interface to quickly review your grades, track
-              your academic progress, and stay updated with course results.
-            </p>
-            <div class="arrow">
-              <i class="fas fa-arrow-right card-icon"></i>
-            </div>
-          </a>
-          <a href="#" class="card-item">
-            <img src="img/hospital.jpg" alt="Card Image" />
-            <span class="editor">Database</span>
-            <h3>Hospital Database Website</h3>
-            <p>
-              The cornerstone of streamlined medical data management. Designed
-              to efficiently store, retrieve, and manage patient records,
-              medical histories, and healthcare processes, this platform
-              serves as an invaluable tool for hospitals, clinics, and
-              healthcare professionals.
-            </p>
-            <div class="arrow">
-              <i class="fas fa-arrow-right card-icon"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </main>
+    <!-- ============= SCROLL TOP ==========-->
 
-  <div class="pdf-download">
-    <a href="resume-v4.pdf" target="_blank">
-      <i class="fa fa-file-pdf-o"></i> Download my Resume here
-    </a>
-  </div>
+    <!-- ============= SWIPER JS ===========-->
 
-  <!-- ============= FOOTER ==============-->
-  <div class="py-20" id="contact-me">
-    <div class="container mx-auto items-center">
-      <!-- ======== Contact Me ======== -->
-      <!-- Contact Me Version 3 -->
-      <div class="wrapper">
-        <div class="card front-face">
-          <img src="img/Contact-me.png" />
-        </div>
-        <div class="card back-face">
-          <img src="img/chingsan.jpeg" />
-          <div class="info">
-            <div class="title">Chingsan Ly</div>
-            <p>Front-End Developer <br /></p>
-          </div>
-          <ul>
-            <a href="https://www.facebook.com/chingsan.ly/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/chingsan-ly-010a43264/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Chingsan53"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/ChingsanLy"><i class="fa-brands fa-twitter"></i></a>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- ============= MAIN JS =============-->
 
-  <!-- ============= SCROLL TOP ==========-->
+    <script src=" js/script.js defer"></script>
 
-  <!-- ============= SWIPER JS ===========-->
-
-  <!-- ============= MAIN JS =============-->
-
-  <script src=" js/script.js defer"></script>
-
-  <!-- ============= FLOWBITE JS =========-->
-  <script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>
-</body>
-
+    <!-- ============= FLOWBITE JS =========-->
+    <script src="../path/to/flowbite/dist/flowbite.bundle.js"></script>
+  </body>
 </html>
